@@ -1,0 +1,25 @@
+data_dir: /content/data/raw
+processed_dir: /content/data/processed
+checkpoints_dir: /content/drive/MyDrive/knee-segmentation-cv/checkpoints
+logs_dir: /content/drive/MyDrive/knee-segmentation-cv/logs
+results_dir: /content/drive/MyDrive/knee-segmentation-cv/results
+
+axis: 0
+target_size: [256, 256]
+val_split: 0.15
+seed: 42
+batch_size: 2
+learning_rate: 0.0001
+epochs: 2
+
+early_stopping_patience: 5
+early_stopping_mode: max
+
+
+in_channels: 1
+out_channels: 6
+channels: [32, 64, 128, 256, 512]
+strides: [2, 2, 2, 2]
+num_res_units: 2
+norm: instance
+dropout: 0.1

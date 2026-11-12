@@ -1,0 +1,11 @@
+torch
+monai
+nibabel
+numpy
+scikit-learn
+pyyaml
+matplotlib
+tqdm
+huggingface_hub
+scikit-image
+plotly
